@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "460528742277",
+    "firebase_url": "https://atlante-d7f0b.firebaseio.com",
+    "project_id": "atlante-d7f0b",
+    "storage_bucket": "atlante-d7f0b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460528742277:android:94552477cb0745ee",
+        "android_client_info": {
+          "package_name": "com.sietecerouno.atlante"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460528742277-e3ekjeqhbucltvr7eb2lkvjrj4qbneab.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK-BosA8tFQ9JMTyV42NK_otiGAsCZbqs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460528742277:android:971e414925d6a653",
+        "android_client_info": {
+          "package_name": "com.sietecerouno.atlantetransportador"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460528742277-e3ekjeqhbucltvr7eb2lkvjrj4qbneab.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK-BosA8tFQ9JMTyV42NK_otiGAsCZbqs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

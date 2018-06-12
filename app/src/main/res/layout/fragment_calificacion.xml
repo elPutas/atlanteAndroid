@@ -1,0 +1,155 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:plainpie="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sietecerouno.atlantetransportador.profile.CalificacionFragment">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide"
+        plainpie:layout_constraintGuide_percent="0.07"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/container_rate"
+        plainpie:layout_constraintLeft_toLeftOf="parent"
+        plainpie:layout_constraintRight_toRightOf="parent"
+        plainpie:layout_constraintTop_toBottomOf="@id/guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <az.plainpie.PieView
+            android:id="@+id/pieView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            plainpie:inner_pie_padding="30"
+            plainpie:inner_text="0"
+            plainpie:percentage="1"
+            plainpie:percentage_size="50"
+            plainpie:inner_text_visibility="true"/>
+
+        <TextView
+            android:id="@+id/copy"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:textSize="9sp"
+            android:textColor="@android:color/black"
+            android:text="TU CALIFICACIÓN GLOBAL"
+            android:layout_width="wrap_content"
+            plainpie:layout_constraintTop_toTopOf="@id/pieView"
+            plainpie:layout_constraintLeft_toRightOf="@id/pieView"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/totalTrips"
+            android:textSize="8sp"
+            android:textColor="@android:color/black"
+            android:text="Número de servicios"
+            android:layout_width="wrap_content"
+            plainpie:layout_constraintTop_toBottomOf="@id/copy"
+            plainpie:layout_constraintLeft_toLeftOf="@id/copy"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/totalTripis_txt"
+            android:textColor="@android:color/black"
+            android:textSize="8sp"
+            plainpie:layout_constraintLeft_toRightOf="@id/totalTrips"
+            plainpie:layout_constraintTop_toBottomOf="@id/copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.constraint.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/line"
+        android:layout_marginTop="30dp"
+        plainpie:layout_constraintTop_toBottomOf="@id/container_rate"
+        plainpie:layout_constraintRight_toRightOf="parent"
+        plainpie:layout_constraintLeft_toLeftOf="parent"
+        android:background="@android:color/darker_gray"
+        android:layout_width="250dp"
+        android:layout_height="1dp"></FrameLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/buttons_container"
+        plainpie:layout_constraintRight_toRightOf="parent"
+        plainpie:layout_constraintLeft_toLeftOf="parent"
+        plainpie:layout_constraintTop_toBottomOf="@id/line"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/de"
+            android:textAlignment="center"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/gray"
+            android:hint="DE"
+            android:textSize="10sp"
+            android:padding="5dp"
+            android:background="@drawable/bg_button_gray"
+            android:layout_width="80dp"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:textSize="10sp"
+            android:id="@+id/hasta"
+            android:layout_marginLeft="10dp"
+            plainpie:layout_constraintLeft_toRightOf="@id/de"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/gray"
+            android:hint="HASTA"
+            android:padding="5dp"
+            android:background="@drawable/bg_button_gray"
+            android:layout_width="80dp"
+            android:layout_height="25dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        plainpie:layout_constraintTop_toBottomOf="@id/buttons_container"
+        plainpie:layout_constraintLeft_toLeftOf="parent"
+        plainpie:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <az.plainpie.PieView
+
+            android:id="@+id/pieViewPeriod"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            plainpie:inner_pie_padding="10"
+            plainpie:inner_text="0"
+            plainpie:percentage="1"
+            plainpie:percentage_size="25"
+            plainpie:inner_text_visibility="true"/>
+
+        <TextView
+            android:id="@+id/copy2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:textSize="9sp"
+            android:textColor="@android:color/black"
+            android:text="OBSERVACIONES:"
+            android:layout_width="wrap_content"
+            plainpie:layout_constraintTop_toTopOf="@id/pieViewPeriod"
+            plainpie:layout_constraintLeft_toRightOf="@id/pieViewPeriod"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/body"
+            android:textSize="8sp"
+            android:textColor="@android:color/black"
+            android:text="A continuación encontrarás tu calificación promedio. Recuerda que 5 es excelente y 1 es el más bajo."
+            android:layout_width="150dp"
+            plainpie:layout_constraintTop_toBottomOf="@id/copy2"
+            plainpie:layout_constraintLeft_toLeftOf="@id/copy2"
+            android:layout_height="wrap_content" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.sietecerouno.atlantetransportador.sections.CloseServiceActivity">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/copy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SERVICIO FINALIZADO: \n \n ¡Trabajo al instante! Gracias por trabajar con Atlant.e no olvides calificar el servicio y dejar tus comentarios para que el próximo servicio supere tus expectativas."
+            android:textColor="@android:color/black" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/price_txt"
+                android:editable="false"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Valor servicio: $"
+                android:textColor="@color/blueApp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:editable="false"
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text=""
+                android:textColor="@color/blueApp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/blueApp"></FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TU OPIONION ES MUY VALIOSA PARA NOSOTROS \n\n ¿Tienes algún comentario?"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/myComments"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:maxLines="20"
+            android:padding="10dp"
+            android:textSize="12sp"
+            android:gravity="top"
+            android:background="@drawable/bg_button_white"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="Califica al usuario"
+            android:textColor="@android:color/black" />
+
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:layout_gravity="center"
+            android:id="@+id/myRate"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@android:color/black"
+            android:secondaryProgressTint="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foregroundTint="@android:color/white"
+            android:progressTint="#ffff00"
+            android:progressBackgroundTint="@android:color/darker_gray"
+            style="@style/Widget.MaterialRatingBar.RatingBar" />
+
+        <TextView
+            android:id="@+id/btnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_button_blue"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:text="ENVIAR" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

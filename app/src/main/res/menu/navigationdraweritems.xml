@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group android:checkableBehavior="all">
+        <item
+            android:id="@+id/navigation_name"
+            android:title="Nombre Dummy"/>
+        <item
+            android:id="@+id/navigation_editName"
+            android:title="Editar perfil"/>
+    </group>
+
+    <group android:checkableBehavior="all">
+        <item
+            android:id="@+id/navigation_item_1"
+            android:title="Servicios"/>
+        <item
+            android:id="@+id/navigation_item_2"
+            android:title="Notificaciones"/>
+
+        <item
+            android:id="@+id/navigation_item_3"
+            android:title="Método de pago"/>
+
+        <item
+            android:id="@+id/navigation_item_4"
+            android:title="Contacto"/>
+
+        <item
+            android:id="@+id/navigation_item_5"
+            android:title="Acerca"/>
+
+        <item
+            android:id="@+id/navigation_item_6"
+            android:title="Ayuda"/>
+    </group>
+
+</menu>

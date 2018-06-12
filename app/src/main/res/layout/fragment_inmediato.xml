@@ -1,0 +1,334 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.sietecerouno.atlantetransportador.fragments.InmediatoFragment">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+    </RelativeLayout>
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/infoMap"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/dark"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textSize="8sp"
+                android:textColor="@color/black"
+                android:text="CONECTADO " />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/infoReq"
+        android:visibility="gone"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <TextView
+            android:id="@+id/copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="Tienes un servicio cerca"/>
+
+        <TextView
+            android:id="@+id/btn_viewMore"
+            android:textSize="12sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/copy"
+            android:background="@drawable/bg_button_white"
+            app:layout_constraintTop_toTopOf="@id/copy"
+            android:layout_marginLeft="10dp"
+            android:padding="3dp"
+            android:text="VER MÁS"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/resumePanel"
+        android:visibility="gone"
+        android:paddingLeft="40dp"
+        android:layout_width="0dp"
+        android:layout_height="230dp"
+        android:background="@drawable/bg_solo"
+        app:layout_constraintBottom_toBottomOf="@id/container"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <android.support.constraint.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.07"
+            tools:layout_editor_absoluteY="36dp"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            app:layout_constraintTop_toTopOf="@id/guideline"
+            android:id="@+id/title"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:text="RESUMEN DE ENVÍO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/origen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp"
+            android:text="Origen:"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            />
+        <TextView
+            android:id="@+id/destino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp"
+            android:text="Destino:"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@+id/origen"
+            />
+        <TextView
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:text="Quien envia:"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@+id/destino"
+            />
+        <TextView
+            android:id="@+id/get"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:text="Quien recibe:"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@+id/send"
+            />
+
+        <TextView
+            android:id="@+id/pack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:text="Que se envia:"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@+id/get"
+            />
+
+        <TextView
+            android:id="@+id/btnClose"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_green"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:text="CERRAR"/>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/btnsResume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+        <TextView
+            android:id="@+id/btnAccepted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_green"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:text="TOMAR SERICIO"/>
+
+        <TextView
+            android:id="@+id/btnRejected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_red"
+            app:layout_constraintTop_toTopOf="@+id/btnAccepted"
+            app:layout_constraintLeft_toRightOf="@+id/btnAccepted"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_marginLeft="20dp"
+            android:text="RECHAZAR"/>
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/containerCurrent"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/origenPanel"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:background="@android:color/darker_gray"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:textSize="10sp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@drawable/bg_button_green"
+                android:text="A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="ORIGEN: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/current_origen"
+                android:layout_marginLeft="3dp"
+                android:textSize="8sp"
+                android:textColor="@android:color/black"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            app:layout_constraintTop_toBottomOf="@+id/origenPanel"
+            android:layout_marginTop="3dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:background="@android:color/darker_gray"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:textSize="10sp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@drawable/bg_button_red"
+                android:text="B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="DESTINO: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/current_destino"
+                android:layout_marginLeft="3dp"
+                android:textSize="8sp"
+                android:textColor="@android:color/black"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnsCurrent"
+            android:orientation="vertical"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent">
+            <TextView
+                android:id="@+id/btnDetalle"
+                android:textAlignment="center"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_button_blue"
+                android:text="DETALLES DEL SERVICIO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/btnContacto"
+                android:layout_marginBottom="10dp"
+                android:textAlignment="center"
+                android:background="@drawable/bg_button_blue"
+                android:text="CONTACTAR USUARIO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/btnFinalizar"
+                android:layout_marginBottom="30dp"
+                android:textAlignment="center"
+                android:background="@drawable/bg_button_blue"
+                android:text="FINALIZAR SERVICIO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="widthMax">270dp</dimen>
+    <dimen name="textSizeCopy">12sp</dimen>
+    <dimen name="circleChooseVehicle">150dp</dimen>
+    <dimen name="centerButtonGreen">63dp</dimen>
+    <dimen name="sizeSquareDwP">75dp</dimen>
+    <dimen name="sizeBtnGreenPlus">20dp</dimen>
+    <dimen name="top_margin_thumbs">30dp</dimen>
+    <dimen name="margin_grenn_btn_thumb">30dp</dimen>
+</resources>

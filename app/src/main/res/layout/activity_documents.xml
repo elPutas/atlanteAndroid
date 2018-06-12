@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.sietecerouno.atlantetransportador.sections.DocumentsActivity">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        app:layout_constraintGuide_percent="0.07"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/copy"
+        android:layout_width="@dimen/widthMax"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/textSizeCopy"
+        android:text="La información requerida a continuación es necesaria para completar el registro. Te recomendamos que los archivos que cargues sean legibles y de buena calidad."
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/copy"
+        app:layout_constraintBottom_toTopOf="@id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+    <TextView
+        android:paddingBottom="20dp"
+        android:background="@drawable/bg_one_line"
+        android:text="Fotografía"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/textSizeCopy"
+        android:id="@+id/photo"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/copy"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="@dimen/widthMax"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/ok_photo"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/photo"
+        app:layout_constraintLeft_toRightOf="@+id/photo" />
+
+    <TextView
+        android:paddingBottom="20dp"
+        android:background="@drawable/bg_one_line"
+        android:text="Documento de identidad"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/textSizeCopy"
+        android:id="@+id/cc"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/photo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="@dimen/widthMax"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/ok_cc"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/cc"
+        app:layout_constraintLeft_toRightOf="@+id/cc" />
+
+    <TextView
+        android:paddingBottom="20dp"
+        android:background="@drawable/bg_one_line"
+        android:text="Licencia de conducción"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/textSizeCopy"
+        android:id="@+id/idCar"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/cc"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="@dimen/widthMax"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/ok_idCar"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/idCar"
+        app:layout_constraintLeft_toRightOf="@+id/idCar" />
+
+    <TextView
+        android:paddingBottom="20dp"
+        android:background="@drawable/bg_one_line"
+        android:text="RUT"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/textSizeCopy"
+        android:id="@+id/rut"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/idCar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="@dimen/widthMax"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/ok_rut"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/rut"
+        app:layout_constraintLeft_toRightOf="@+id/rut" />
+
+    <TextView
+        android:paddingBottom="20dp"
+        android:background="@drawable/bg_one_line"
+        android:text="Tarjeta de propiedad"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/textSizeCopy"
+        android:id="@+id/tarjetaPropiedad"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/rut"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="@dimen/widthMax"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/ok_tarjetaPropiedad"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/tarjetaPropiedad"
+        app:layout_constraintLeft_toRightOf="@+id/tarjetaPropiedad" />
+
+    <TextView
+        android:paddingBottom="20dp"
+        android:background="@drawable/bg_one_line"
+        android:text="SOAT"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/textSizeCopy"
+        android:id="@+id/soat"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tarjetaPropiedad"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="@dimen/widthMax"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/ok_soat"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/soat"
+        app:layout_constraintLeft_toRightOf="@+id/soat" />
+
+    <TextView
+        android:paddingBottom="20dp"
+        android:background="@drawable/bg_one_line"
+        android:text="tecnicomecánica"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/textSizeCopy"
+        android:id="@+id/tecnomecanica"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/soat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="@dimen/widthMax"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/ok_tecnomecanica"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/tecnomecanica"
+        app:layout_constraintLeft_toRightOf="@+id/tecnomecanica" />
+
+    <TextView
+        android:paddingBottom="33dp"
+        android:background="@drawable/bg_one_line"
+        android:text="Imagen vehículo \n (Frontal, lateral izquierda, lateral derecha, trasera)"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/textSizeCopy"
+        android:id="@+id/car"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tecnomecanica"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="@dimen/widthMax"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/ok_car"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/car"
+        app:layout_constraintLeft_toRightOf="@+id/car" />
+
+    <TextView
+        android:id="@+id/btn_next"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="@dimen/textSizeCopy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/bg_button_blue"
+        android:text="CONTINUAR"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</android.support.constraint.ConstraintLayout>

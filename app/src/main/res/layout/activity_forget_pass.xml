@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.sietecerouno.atlantetransportador.sections.ForgetPassActivity">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:id="@+id/copy"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        android:textColor="@android:color/darker_gray"
+        android:text="Has olvidado tu contraseña? \n \n Escribe a continuación la dirección de correo electrónico que usaste al momento de registrarte en Atlant.e. Te enviaremos un enlace para reestablecer la contraseña."
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/black"
+        android:background="@drawable/bg_edittext"
+        android:id="@+id/mail_txt"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:hint="Correo:"
+        android:maxLines="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/copy"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginStart="150dp"
+        android:id="@+id/send_btn"
+        android:layout_marginTop="30dp"
+        android:textSize="15sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mail_txt"
+        android:textColor="@android:color/white"
+        android:text="ENVIAR"
+        android:background="@drawable/bg_button_blue"
+        app:layout_constraintStart_toStartOf="@id/mail_txt"
+        app:layout_constraintEnd_toEndOf="@id/mail_txt"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"/>
+
+</android.support.constraint.ConstraintLayout>

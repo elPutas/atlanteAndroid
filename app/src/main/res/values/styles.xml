@@ -1,0 +1,39 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.Atlante" parent="@style/Theme.AppCompat">
+        <item name="colorPrimary">@color/blueApp</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/greenApp</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="NumbePickerStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:colorControlNormal" tools:targetApi="lollipop">@android:color/darker_gray</item>
+    </style>
+
+    <string-array name="nav_drawer_items">
+        <item>HOME</item>
+        <item>MUJERES</item>
+        <item>HOMBRES</item>
+        <item>ACCESORIOS</item>
+        <item>ARTE</item>
+        <item>FAVORITOS</item>
+        <item>PERFIL</item>
+        <item>LOGOUT</item>
+    </string-array>
+
+    <style name="DatePickerSpinner">
+        <item name="android:textSize">22dp</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:colorControlNormal" tools:targetApi="lollipop">@android:color/darker_gray</item>
+    </style>
+
+</resources>

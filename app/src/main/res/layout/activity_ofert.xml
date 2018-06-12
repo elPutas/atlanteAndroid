@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@android:color/white"
+    tools:context="com.sietecerouno.atlantetransportador.sections.OfertActivity">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/white"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guide"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/photoUser"
+            app:layout_constraintTop_toBottomOf="@id/guide"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="1500dp"
+            android:layout_height="150dp" />
+
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/myRate"
+            android:isIndicator="true"
+            android:clickable="false"
+            app:layout_constraintTop_toBottomOf="@id/photoUser"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@android:color/black"
+            android:secondaryProgressTint="@android:color/white"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:foregroundTint="@android:color/white"
+            android:progressTint="#ffff00"
+            android:progressBackgroundTint="@android:color/darker_gray"
+            style="@style/Widget.MaterialRatingBar.RatingBar" />
+
+        <TextView
+            android:id="@+id/name"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/myRate"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <FrameLayout
+            android:id="@+id/greenLine"
+            android:background="@color/greenApp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/name"
+            android:layout_width="200dp"
+            android:layout_height="2dp"></FrameLayout>
+
+        <TextView
+            android:id="@+id/copy"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/greenLine"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textColor="@android:color/black"
+            android:text="Comentarios:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/comment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_button_gray"
+            android:maxLines="20"
+            android:padding="10dp"
+            android:textSize="12sp"
+            android:gravity="top"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toTopOf="@id/grayLine"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/copy" />
+        <FrameLayout
+            android:id="@+id/grayLine"
+            app:layout_constraintBottom_toTopOf="@id/value"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"></FrameLayout>
+
+        <TextView
+            android:text="Contra oferta: $"
+            android:textSize="12sp"
+            android:id="@+id/contraoferta"
+            app:layout_constraintTop_toTopOf="@id/value_txt"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:editable="false"
+            app:layout_constraintLeft_toRightOf="@id/contraoferta"
+            android:textSize="12sp"
+            android:id="@+id/contraoferta_txt"
+            android:layout_marginTop="9dp"
+            app:layout_constraintTop_toTopOf="@id/grayLine"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/value_txt"
+            app:layout_constraintTop_toTopOf="@id/value"
+            app:layout_constraintBottom_toTopOf="@id/btn_next"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/value"
+            android:text="Valor: $"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/value"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_button_gray"
+            android:inputType="number"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@id/btn_next"
+            app:layout_constraintRight_toRightOf="parent" />
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/btn_next"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_button_green"
+            android:textColor="@android:color/white"/>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/btns_contraoferta"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/btn_aceptar"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="ACEPTAR"
+                android:background="@drawable/bg_button_green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/btn_rechazar"
+                app:layout_constraintLeft_toRightOf="@id/btn_aceptar"
+                app:layout_constraintRight_toRightOf="parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:text="RECHAZAR"
+                android:background="@drawable/bg_button_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

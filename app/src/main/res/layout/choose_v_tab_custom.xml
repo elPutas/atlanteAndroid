@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/serviceTable"
+    android:gravity="center"
+    android:layout_column="0"
+    android:layout_width="fill_parent">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:id="@+id/TableRow01"
+        android:layout_gravity="center">
+
+
+
+        <RelativeLayout
+            android:id="@+id/myCel"
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_column="1">
+
+
+            <FrameLayout
+                android:id="@+id/bg"
+                android:alpha="0.4"
+                android:background="@color/blueApp"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                ></FrameLayout>
+            <FrameLayout
+                android:id="@+id/selectedBG"
+                android:alpha="0.1"
+                android:background="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                ></FrameLayout>
+
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/camion_small"
+                android:id="@+id/icon"
+                android:layout_width="70dp"
+                android:layout_height="100dp"
+                android:layout_gravity="start" />
+
+            <TextView
+                android:layout_toEndOf="@id/icon"
+                android:textColor="@color/blueApp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/id"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="Nombre dummy    (Categoria B2)"
+                android:textStyle="bold"
+                android:gravity="left|bottom"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:height="40sp" />
+
+            <TextView
+                android:textSize="9sp"
+                android:layout_toEndOf="@id/icon"
+                android:layout_below="@id/id"
+                android:textColor="@android:color/black"
+                android:id="@+id/description"
+                android:layout_width="260dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:maxHeight="80dp"
+                android:text="Necesitas licencia de conducción A1 para cilindraje menor o igual a 125 c.c. o A2 para cilindraje superior a 125 c.c., podrás trabajar con tu vehículo de dos ruedas todo el tiempo sin preocuparte por pico y placa"
+                android:layout_marginLeft="10dp" />
+
+            <FrameLayout
+                android:id="@+id/line"
+                android:layout_marginTop="10dp"
+                android:background="@color/blueApp"
+                android:layout_below="@id/icon"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"></FrameLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </TableRow>
+
+
+</TableLayout>

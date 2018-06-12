@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/serviceTable"
+    android:gravity="center"
+    android:layout_column="0"
+    android:background="@android:color/white"
+    android:layout_width="fill_parent">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:id="@+id/TableRow01"
+        android:layout_gravity="center">
+
+
+
+        <RelativeLayout
+            android:id="@+id/myCel"
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_column="1">
+
+
+            <FrameLayout
+                android:id="@+id/selectedBG"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                ></FrameLayout>
+
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/bg_circle_gray"
+                android:id="@+id/icon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="start" />
+
+
+            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                android:layout_gravity="center"
+                android:id="@+id/myRate"
+                android:isIndicator="true"
+                android:clickable="false"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/icon"
+                android:layout_alignLeft="@id/icon"
+                android:layout_alignRight="@id/icon"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@android:color/black"
+                android:secondaryProgressTint="@android:color/white"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:foregroundTint="@android:color/white"
+                android:progressTint="@color/yellowApp"
+                android:progressBackgroundTint="@android:color/darker_gray"
+                style="@style/Widget.MaterialRatingBar.RatingBar" />
+
+            <TextView
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/icon"
+                android:textColor="@android:color/darker_gray"
+                android:id="@+id/info"
+                android:layout_width="240dp"
+                android:layout_height="95dp"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:height="100dp" />
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:id="@+id/status"
+            android:textSize="10sp"
+            android:text="Extado: "
+            android:layout_below="@id/info"
+            android:layout_alignLeft="@id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@+id/line"
+                android:layout_marginTop="7dp"
+                android:background="@color/greenApp"
+                android:layout_below="@id/myRate"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="1dp"></FrameLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </TableRow>
+
+
+</TableLayout>

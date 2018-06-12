@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.sietecerouno.atlantetransportador.sections.DocumentWhitPhotoActivity">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.07"
+        tools:layout_editor_absoluteY="44dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/icon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/icon_perfil"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/copy"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon"
+        android:layout_marginTop="20dp"
+        android:text="A continuación sube una foto del conductor de tu vehiculo de manera legible"/>
+
+    <FrameLayout
+        android:layout_margin="30dp"
+        android:id="@+id/line"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/copy"
+        android:layout_width="350dp"
+        android:layout_height="1dp"></FrameLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top_margin_thumbs"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/square1"
+            android:layout_width="@dimen/sizeSquareDwP"
+            android:layout_height="@dimen/sizeSquareDwP"
+            android:background="@android:color/darker_gray"
+            android:layout_marginRight="8dp">
+            <ImageButton
+                android:clickable="false"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:scaleType="centerCrop"
+                android:layout_width="@dimen/sizeBtnGreenPlus"
+                android:layout_height="@dimen/sizeBtnGreenPlus"
+                android:src="@drawable/btn_add"/>
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="@dimen/sizeSquareDwP"
+                android:layout_height="@dimen/sizeSquareDwP" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/square2"
+            android:layout_width="@dimen/sizeSquareDwP"
+            android:layout_height="@dimen/sizeSquareDwP"
+            app:layout_constraintLeft_toRightOf="@id/square1"
+            android:layout_marginLeft="8dp"
+            android:background="@android:color/darker_gray">
+            <ImageButton
+                android:clickable="false"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:scaleType="centerCrop"
+                android:layout_width="@dimen/sizeBtnGreenPlus"
+                android:layout_height="@dimen/sizeBtnGreenPlus"
+                android:src="@drawable/btn_add"/>
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="@dimen/sizeSquareDwP"
+                android:layout_height="@dimen/sizeSquareDwP" />
+        </android.support.constraint.ConstraintLayout>
+
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/square3"
+            android:layout_width="@dimen/sizeSquareDwP"
+            android:layout_height="@dimen/sizeSquareDwP"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintLeft_toRightOf="@+id/square2"
+            android:layout_marginLeft="8dp">
+
+            <ImageButton
+                android:clickable="false"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:scaleType="centerCrop"
+                android:layout_width="@dimen/sizeBtnGreenPlus"
+                android:layout_height="@dimen/sizeBtnGreenPlus"
+                android:src="@drawable/btn_add"/>
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="@dimen/sizeSquareDwP"
+                android:layout_height="@dimen/sizeSquareDwP" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/square4"
+            android:layout_width="@dimen/sizeSquareDwP"
+            android:layout_height="@dimen/sizeSquareDwP"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintLeft_toRightOf="@+id/square3"
+            android:layout_marginLeft="8dp">
+
+            <ImageButton
+                android:clickable="false"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:scaleType="centerCrop"
+                android:layout_width="@dimen/sizeBtnGreenPlus"
+                android:layout_height="@dimen/sizeBtnGreenPlus"
+                android:src="@drawable/btn_add"/>
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="@dimen/sizeSquareDwP"
+                android:layout_height="@dimen/sizeSquareDwP" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/btn_next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_button_blue"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:text="CONTINUAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</android.support.constraint.ConstraintLayout>

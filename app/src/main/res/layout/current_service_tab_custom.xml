@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/serviceTable"
+    android:gravity="center"
+    android:layout_column="0"
+    android:background="@android:color/white"
+    android:layout_width="fill_parent">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:id="@+id/TableRow01"
+        android:layout_gravity="center">
+
+
+
+        <RelativeLayout
+            android:id="@+id/myCel"
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_column="1">
+
+
+            <FrameLayout
+                android:id="@+id/selectedBG"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                ></FrameLayout>
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="Servicio Porgramado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_below="@id/type"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_width="240dp"
+                android:layout_height="60dp"
+                android:textSize="10sp"
+                android:layout_marginLeft="10dp"
+                android:height="100dp" />
+
+            <TextView
+                android:id="@+id/idR"
+                android:textColor="@android:color/black"
+                android:text="#"
+                android:textSize="10sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:id="@+id/status"
+            android:textSize="10sp"
+            android:text="Ver más..."
+            android:layout_marginTop="5dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/bg_button_gray"
+            android:layout_below="@id/idR"
+            android:layout_alignLeft="@id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+            <FrameLayout
+                android:id="@+id/line"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/darker_gray"
+                android:layout_below="@id/icon"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="2dp"></FrameLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </TableRow>
+
+
+</TableLayout>

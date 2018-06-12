@@ -1,0 +1,55 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.sietecerouno.atlantetransportador.fragments.ProfileFragment">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/fragmentProfile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.constraint.ConstraintLayout
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/datos_btn"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/btn_datos_small"/>
+
+        <ImageView
+            android:id="@+id/ganancias_btn"
+            app:layout_constraintLeft_toRightOf="@id/datos_btn"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/btn_ganancias_small"/>
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/datos_btn"
+            android:id="@+id/vehiculo_btn"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/btn_vehiculo_small"/>
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/ganancias_btn"
+            app:layout_constraintLeft_toRightOf="@id/vehiculo_btn"
+            android:id="@+id/calificacion_btn"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/btn_calificacion_small"/>
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+
+
+</FrameLayout>
