@@ -95,7 +95,7 @@
             android:value="AIzaSyB2M83XAOBq50_cUzmQlq_T9j_XiN0O-sc" />
         <meta-data
             android:name="io.fabric.ApiKey"
-            android:value="8bb0bbb4910157879310eb4558d25bbd29326577" />
+            android:value="f4fb4a592c9eb5b981f6e8225929fe9bdbf5d894" />
 
         <activity
             android:name=".sections.CloseServiceActivity"
